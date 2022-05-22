@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+  </head>
+
+  <body>
+    <header>
+        <div class="header">
+            <div>
+                <button class="button" id="scoreView">View Highscores</button>
+            </div>
+            <div>
+                <p id="timer"> Time left: 75 s</p>
+            </div>
+        </div>
+    </header>
+
+<main>
+        <div>
+
+            <section class="homepage" id="homepage">
+                <div id="welcome">
+                    <h1>
+                        Welcome to the Code Quiz 
+                    </h1>
+                    <p id="instruction">
+                        Answer as fast as you can, incorrect answers will deduct 15 seconds
+                    </p>
+                    <button class="button" id="startBtn">Start Quiz</button>
+                </div>
+            </section>
+
+
+            <section class="questionQueue" id="questionQueue">
+                <div>
+
+                    <div>
+                        <h2 id = "ask_question">Ask the question</h2>
+                        <ul>
+                            <li><button class ="choices button" id="answerBtn1" value="a">Answer1</button></li>
+                            <li><button class ="choices button" id="answerBtn2" value="b">Answer2</button></li>
+                            <li><button class ="choices button" id="answerBtn3" value="c">Answer3</button></li>
+                            <li><button class ="choices button" id="answerBtn4" value="d">Answer4</button></li>
+                        </ul>
+                    <div>
+                      <div id="check">
+                        <p>Correct or Wrong</p>
+                      </div>
+
+                </div>
+            </section>
+
+
+            <section class="submition" id="submition">
+                <div>
+                    <h2 id="finish">You Completed the Quiz</h2>
+                    <p id = "finalScore">Your final score is: </p>
+                    <p>Enter Your initials
+                        <input id="initial">
+                        <button class="button" id="submit_btn">Submit</button>
+                    </p>
+                </div>
+            </section>
+
+
+            <section class="highscores" id ="highscores">
+                <div>
+                    <h2>High Scores</h2>
+                    <div id="scoreRec"><p>Your record</p></div><br><br>
+                    <div>
+                        <button class="button" id="backBtn">Try Again</button>
+                        <button class="button" id="clearBtn">Clear Highscores</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>
